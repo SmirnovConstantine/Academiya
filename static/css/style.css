@@ -1,0 +1,27 @@
+.MasterImage{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.CandidateImage{
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+.image{
+  padding-left: 300px;
+  padding-top: 50px;
+}
+.Head{
+  padding-left: 400px;
+  padding-top: 40px;
+  font-family: 'Shojumaru', cursive;
+}
+.text{
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.master{
+  padding-left: 400px;
+}

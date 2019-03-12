@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    Masters
+{% endblock %}
+
+{% block content %}
+
+<h3 class="mb-5" class="master">All masters</h3>
+    {% csrf_token %}
+    <select class="mb-5" name="masters">
+      {% for masters in masters %}
+      <option>{{ masters.name }}</option>
+      {% endfor %}
+    </select>
+
+
+    <select class="mb-5" name="masters">
+      {% for masters in masters %}
+        <option>{{ masters.planet }}</option>
+      {% endfor %}
+    </select>
+
+    <button type="submit" name="OK" calass="btn btn-outline-dark"><a href="{% url 'master_candidate_url' %}">OK</a></button>
+
+
+{% endblock %}

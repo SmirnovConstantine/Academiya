@@ -1,0 +1,15 @@
+{% extends 'academiya/masters_profile.html' %}
+
+{% block title %}
+    Masters
+{% endblock %}
+
+{% block content %}
+      {% csrf_token %}
+
+     {% for answer in answer %}
+        <p> <strong>{{ answer.candidate }}</strong> {{ answer.value }}
+     {% endfor %}
+
+     <p><button type="submit" name="button" class="btn btn-outline-dark"><a href="{% url 'home_page_url' %}">OK</button></a></p>
+{% endblock %}

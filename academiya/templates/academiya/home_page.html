@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block Choise %}
+  <div class="image">
+    <button type="button" class="btn btn-outline-primary" class="button"><a href="{% url 'master_url' %}"><img src="static/img/master.jpg" title="Master" class="MasterImage"></a></button>
+    <button type="button" class="btn btn-outline-primary"><a href="{% url 'candidate_create_url' %}"><img src="static/img/padavan.jpg" title="Candidate" class="CandidateImage"></a></button>
+  </div>
+
+  <div class="text">
+    <p>Your are welcome in Djedi Academiya. If you are Master, click on "Master button"
+        choose yourself from list and you can see all candidates, who pass exams in your planet
+        Your can see answers, all of candidates.
+        If your Candidate, your must be choose "Candidate Button". After that your entry some information
+        adount your, and your must answer for some questions.</p>
+  </div>
+{% endblock %}
